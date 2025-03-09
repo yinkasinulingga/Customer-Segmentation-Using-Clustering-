@@ -1,68 +1,66 @@
-
 ---
 
 # **Customer Segmentation Using Clustering**  
 
-## **Pendahuluan**  
-Proyek ini bertujuan untuk **mengelompokkan pelanggan kartu kredit berdasarkan pola transaksi mereka** menggunakan **K-Means Clustering**. Dengan segmentasi yang lebih akurat, Bank ABC dapat **menyusun strategi pemasaran yang lebih efektif, meningkatkan loyalitas pelanggan, dan mengoptimalkan penawaran produk**.  
+## **Introduction**  
+This project aims to **segment credit card customers based on their transaction patterns** using **K-Means Clustering**. With more accurate segmentation, Bank ABC can **develop more effective marketing strategies, enhance customer loyalty, and optimize product offerings**.  
 
-## **Tujuan Proyek**  
-- **Mengidentifikasi pola penggunaan kartu kredit pelanggan**  
-- **Membantu perancangan strategi pemasaran yang lebih tepat sasaran**  
-- **Meningkatkan kepuasan dan loyalitas pelanggan melalui penawaran yang lebih personal**  
+## **Project Objectives**  
+- **Identify customer credit card usage patterns**  
+- **Assist in designing more targeted marketing strategies**  
+- **Improve customer satisfaction and loyalty through personalized offers**  
 
-## **Tahapan Proyek**  
-1. **Pengumpulan Data** → Mengambil data transaksi  dari **Google BigQuery**  
-2. **Preprocessing Data** → Cleaning data, handling missing values, normalisasi (scaling), dan reduksi dimensi dengan PCA  
-3. **Feature Engineering** → Pemilihan variabel utama berdasarkan pola transaksi pelanggan  
-4. **Modeling** → Menerapkan **K-Means Clustering** untuk mengelompokkan pelanggan  
-5. **Evaluasi Model** → Menentukan jumlah klaster optimal menggunakan **Elbow Method & Silhouette Score**  
-6. **Visualisasi Hasil** → Menampilkan hasil clustering dengan **Matplotlib & Seaborn**  
+## **Project Stages**  
+1. **Data Collection** → Retrieve transaction data from **Google BigQuery**  
+2. **Data Preprocessing** → Clean data, handle missing values, normalize (scaling), and reduce dimensions using PCA  
+3. **Feature Engineering** → Select key variables based on customer transaction patterns  
+4. **Modeling** → Apply **K-Means Clustering** to segment customers  
+5. **Model Evaluation** → Determine the optimal number of clusters using **Elbow Method & Silhouette Score**  
+6. **Result Visualization** → Display clustering results with **Matplotlib & Seaborn**  
 
-## **Teknologi yang Digunakan**  
+## **Technologies Used**  
 - **Database**: Google BigQuery  
-- **Pemrograman & Machine Learning**: SQL, Python, Scikit-learn, Pandas, NumPy  
-- **Visualisasi Data**: Matplotlib, Seaborn  
+- **Programming & Machine Learning**: SQL, Python, Scikit-learn, Pandas, NumPy  
+- **Data Visualization**: Matplotlib, Seaborn  
 - **Notebook**: Google Colab / Jupyter Notebook  
 
-## **Hasil Segmentasi Pelanggan**  
-Dari hasil segmentasi, pelanggan terbagi menjadi **5 klaster** dengan karakteristik yang berbeda:  
+## **Customer Segmentation Results**  
+The segmentation results classified customers into **5 clusters** with distinct characteristics:  
 
-1. **Klaster 0** → Pelanggan aktif dengan saldo tinggi, batas kredit besar, dan sering menggunakan cash advance  
-2. **Klaster 1** → Pelanggan konservatif dengan transaksi rendah, saldo kecil, dan batas kredit rendah  
-3. **Klaster 2** → Pelanggan dengan penggunaan sedang, saldo dan batas kredit bervariasi, serta jarang menggunakan cash advance  
-4. **Klaster 3** → Pelanggan dengan saldo tinggi, pembayaran besar, dan batas kredit tinggi tetapi penggunaan cash advance minim  
-5. **Klaster 4** → Pelanggan dengan saldo rendah, pembayaran kecil, dan jarang menggunakan kartu kredit  
+1. **Cluster 0** → Active customers with high balances, large credit limits, and frequent cash advance usage  
+2. **Cluster 1** → Conservative customers with low transactions, small balances, and low credit limits  
+3. **Cluster 2** → Moderate usage customers with varying balances and credit limits, and infrequent cash advance usage  
+4. **Cluster 3** → Customers with high balances, large payments, high credit limits, but minimal cash advance usage  
+5. **Cluster 4** → Customers with low balances, small payments, and rare credit card usage  
 
-## **Rekomendasi Bisnis**  
-Dari hasil segmentasi pelanggan ini, **Bank ABC** dapat mengembangkan strategi pemasaran yang lebih tepat sasaran:  
+## **Business Recommendations**  
+Based on the customer segmentation, **Bank ABC** can develop more targeted marketing strategies:  
 
-- **Klaster 0** → Tawarkan **produk premium & layanan eksklusif** untuk meningkatkan loyalitas pelanggan berdaya beli tinggi  
-- **Klaster 1** → Edukasi pelanggan tentang **manfaat penggunaan kartu kredit** dan tawarkan peningkatan batas kredit  
-- **Klaster 2** → Berikan **program cashback atau rewards** untuk meningkatkan penggunaan kartu kredit  
-- **Klaster 3** → Kembangkan **penawaran khusus dan layanan eksklusif** bagi pelanggan dengan potensi finansial tinggi  
-- **Klaster 4** → Berikan promosi untuk mendorong penggunaan kartu kredit lebih aktif  
+- **Cluster 0** → Offer **premium products & exclusive services** to enhance loyalty among high-spending customers  
+- **Cluster 1** → Educate customers on **credit card benefits** and offer credit limit increases  
+- **Cluster 2** → Provide **cashback or rewards programs** to boost credit card usage  
+- **Cluster 3** → Develop **special offers and exclusive services** for customers with high financial potential  
+- **Cluster 4** → Promote offers to encourage more active credit card usage  
 
-## **Saran Analisis Selanjutnya**  
-- **Melakukan eksplorasi data tambahan (EDA)** → Menganalisis pola belanja berdasarkan kategori transaksi dan waktu penggunaan kartu kredit  
-- **Mengidentifikasi kelompok pelanggan yang kurang mendapat perhatian** → Memastikan semua segmen mendapatkan penawaran produk yang sesuai  
-- **Menganalisis waktu transaksi tertinggi** → Mengoptimalkan promosi dan marketing campaign pada jam transaksi yang paling aktif  
-- **Memahami preferensi pelanggan** → Mengembangkan produk yang lebih sesuai dengan kebutuhan pelanggan  
+## **Suggestions for Further Analysis**  
+- **Conduct additional exploratory data analysis (EDA)** → Analyze spending patterns based on transaction categories and credit card usage time  
+- **Identify under-targeted customer groups** → Ensure all segments receive appropriate product offers  
+- **Analyze peak transaction times** → Optimize promotions and marketing campaigns during the most active transaction periods  
+- **Understand customer preferences** → Develop products that better meet customer needs  
 
-## **Impact Bisnis**  
-- **Optimasi strategi pemasaran** → Menargetkan pelanggan dengan promosi yang lebih relevan berdasarkan segmen mereka  
-- **Peningkatan loyalitas pelanggan** → Memberikan penawaran yang lebih personal untuk meningkatkan retensi pelanggan  
-- **Optimasi penggunaan kartu kredit** → Mendorong pelanggan untuk lebih aktif menggunakan kartu kredit dan meningkatkan transaksi per pelanggan  
+## **Business Impact**  
+- **Optimize marketing strategies** → Target customers with more relevant promotions based on their segments  
+- **Enhance customer loyalty** → Provide more personalized offers to improve customer retention  
+- **Maximize credit card usage** → Encourage customers to use their credit cards more actively and increase transactions per customer  
 
-## **Cara Menjalankan Proyek**  
-1. Clone repository ini  
-2. Instal dependensi dengan `pip install -r requirements.txt`  
-3. Hubungkan dengan **Google BigQuery** untuk mengambil data  
-4. Jalankan skrip analisis dan model clustering di **Jupyter Notebook**  
+## **How to Run the Project**  
+1. Clone this repository  
+2. Install dependencies with `pip install -r requirements.txt`  
+3. Connect to **Google BigQuery** to retrieve data  
+4. Run the analysis and clustering model scripts in **Jupyter Notebook**  
 
-## **Kontak**  
-Jika ada pertanyaan atau saran, silakan hubungi:  
+## **Contact**  
+For any questions or suggestions, please contact:  
 **Email**: yinkasinulingga@gmail.com  
 
 ---
-
